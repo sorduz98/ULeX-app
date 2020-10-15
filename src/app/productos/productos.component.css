@@ -6,6 +6,10 @@
     margin: 10px auto 0px auto;
 }
 
+.categorias {
+    width: 100%
+}
+
 hr {
     margin-left: 0;
     margin-right: 0;
