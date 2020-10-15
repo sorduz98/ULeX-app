@@ -3,8 +3,8 @@ import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 
 interface userData {
-  tokenExpirationDate: Date,
-  login: boolean
+  tokenExpirationDate: Date;
+  login: boolean;
 }
 
 @Injectable({
