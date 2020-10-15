@@ -1,0 +1,12 @@
+<div class="card-producto">
+    <div class="container">
+        <img [src]="imgURL" />
+        <div class="descripcion-container">
+            <div class="descripcion">{{ descripcion }}</div>
+            <div class="precio">
+                {{ precio | currency:'COP':'symbol-narrow':'1.0-0' }}
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-comprar" type="button">Comprar</button>
+</div>

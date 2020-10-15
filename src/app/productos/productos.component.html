@@ -1,0 +1,23 @@
+<div style="text-align:center; margin-top: 40vh;" *ngIf="isLoading">
+    <app-spinner></app-spinner>
+</div>
+<div class="prod-container" *ngIf="!isLoading">
+    <div class="categorias" *ngFor="let category of categories; let i = index">
+        <div class="titulo-categoria">
+            <h1>{{ category.name }}</h1>
+        </div>
+        <hr />
+        <div *ngFor="let product of productsByCat[i]">
+            <app-producto *ngIf="product.product_data.kind == 1" [imgURL]="
+          'https://assets.compramass.com/products/' +
+          product.product_data.ean +
+          '-80@3x.jpg'
+        " [descripcion]="product.product_data.name" [precio]="product.product_data.price"></app-producto>
+            <app-producto-promocion *ngIf="product.product_data.kind == 2" [imgURL]="
+          'https://assets.compramass.com/products/' +
+          product.product_data.ean +
+          '@3x.jpg'
+        " [descripcion]="product.product_data.name" [precio]="product.product_data.price"></app-producto-promocion>
+        </div>
+    </div>
+</div>
