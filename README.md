@@ -1,6 +1,10 @@
 # ULeX
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
+El proyecto cuenta con un servicio de Login automatico cuando el usuario ya ha ingresado previamente, ademas pasados 10 minutos se cierra la seccion automaticamente simulando un expirationDate.
+
+Se añadio un spinner en la pagina /productos que se muestra mientras se adquieren los datos del backend.
+
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
 ## Development server
 
